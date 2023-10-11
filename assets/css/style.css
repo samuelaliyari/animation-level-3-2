@@ -1,0 +1,93 @@
+
+
+
+/* ====================================================================
+                                RESET
+=====================================================================*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ====================================================================
+                                HEADER
+=====================================================================*/
+
+
+main {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    gap: 10px;
+}
+
+div {
+    width: 10px;
+    height: 10px;
+    background-color: aliceblue;
+    animation: loading 0.8s infinite ;
+    transition: translate 300ms ease-in-out;
+}
+
+div:nth-of-type(1) {
+    background-color: rgb(64, 255, 47);
+    animation-delay: 160ms;
+}
+div:nth-of-type(2) {
+    background-color: rgb(59, 11, 250);
+    animation-delay: 320ms;
+}
+div:nth-of-type(3) {
+    background-color: yellow;
+    animation-delay: 480ms;
+}
+div:nth-of-type(4) {
+    background-color: red;
+    animation-delay: 640ms;
+
+}
+div:nth-of-type(5) {
+    background-color: rgb(184, 0, 184);
+    animation-delay: 800ms;
+
+}
+
+
+
+@keyframes loading {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, 5px);
+    }
+    50% {
+        transform: translate(0, 20px);
+    }
+    75% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
+}
